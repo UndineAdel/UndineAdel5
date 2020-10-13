@@ -6,6 +6,7 @@ let currentTab = document.getElementById('current');
 burgerBtn.addEventListener('click', function(){
 	nav.classList.toggle("mobile-toggle");
 	nav.style.transform = 'translateY(window.innerHeight)';
+	// Burger icon change
 	burgerBtn.classList.toggle("burger-exit");
 });
 
@@ -25,6 +26,8 @@ for (let i = 0; i < expandable.length; i++){
 		list[i].classList.toggle('mobile-toggle');
 		listParent[i].classList.toggle('active-tab');
 		arrow[i].classList.toggle('fa-chevron-up');	
+		
+		// If number of clicks on an element is divisible by 2 without remainder -> number of clicks is even
 		if(evenClick[i] % 2 == 0){
 			console.log(evenClick[i])
 			currentTab.classList.add('active-tab');

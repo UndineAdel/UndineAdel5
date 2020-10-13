@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/styles.css" media="screen" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be0fc92df8.js" crossorigin="anonymous"></script>
+    <script src="assets/form.js" defer></script>
+    <script src="assets/nav.js" defer></script>
+	<title>Europalco studio</title>
+</head>
+
+<body>
+    <!-- ///////////////////////// TOP BAR ///////////////////////// -->
+    <div class="top-bar">
+        <a href="index.html" class="logo"></a>
+        <div class="burger"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <div class="nav-expandable">
+                        <a href="#">Studios</a>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="triangle"></div>
+
+                    <div class="nav-expanded" id="submenu1">
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="studio.html">Virtual studio</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="studio2.html">Mixed studio</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="studio3.html">Studio Chroma</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="nav-expandable">
+                        <a href="services.html">Technology</a>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="triangle"></div>
+
+                    <div class="nav-expanded" id="submenu2">
+                        <ul class="submenu">
+                            <li class="submenu-item br-words">
+                                <a href="services.html#augmented">Augmented reality</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#camera">Cam Tracking</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#video">Vid Tracking</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#live">Live streaming</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#avatar">Live avatar</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#touch">Interactive touch</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="nav-expandable">
+                        <a href="portfolio.html">Portfolio</a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <a href="booking.html">Enquiry form</a>
+                    </div>
+                </li>
+                <li class="lang-switch" onclick="window.location.href='../pt/index.html'">
+                    <div class="lang-icon"></div>
+                    <h5>PT</h5>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ///////////////////////// MOBILE NAV ///////////////////////// -->
+    <div class="nav-mobile-final desktop-hidden mobile-toggle">
+    	<div class="language-btn">
+	    	<a href="../pt/index.html">Português</a>
+	    	<div class="active-lang">English</div>
+    	</div>
+    	<nav class="nav-burger">
+	    	<ul>
+		    	<li id="current">
+		    		<a href="index.html">Home</a>
+		    	</li>
+		    	<li class="expandable-li">
+		    		<div class="expandable">Studios<i class="fas fa-chevron-down arrow"></i></div>
+		    		<ul class="sub-list mobile-toggle">
+			    		<li>
+			    			<a href="studio.html">Virtual studio <i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="studio2.html">Studio chroma<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="studio3.html">Mixed studio<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+		    		</ul>
+		    	</li>
+		    	<li class="expandable-li">
+		    		<a class="expandable" href="#">Technology<i class="fas fa-chevron-down arrow"></i></a>
+		    		<ul class="sub-list mobile-toggle">
+			    		<li>
+			    			<a href="services.html#augmented">Augmented reality<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#camera">Camera tracking<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#video">Video tracking<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#live">Live streaming <i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#avatar">Live avatar<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#touch">Interactive touch<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+		    		</ul>
+		    	</li>
+		    	<li>
+		    		<a class="bottom-border" href="portfolio.html">Portfolio</a>
+		    	</li>
+	    	</ul>
+    	</nav>
+    	<a href="booking.html" class="booking-btn-mobile">Enquiry form</a>
+    </div>
+
+
+    <!-- ///////////////////////// WRAP ///////////////////////// -->
+    <div class="wrap">
+        <div class="bcg-img"></div>
+        <div class="dark-overlay"></div>
+        
+        
+        
+        <!-- ///////////////////////// BOTTOM BAR ///////////////////////// -->
+        <div class="bottom-mobile-bar desktop-hidden">
+			<p id="skip1" class="skip">Skip to contact ></p>
+			<div id="next" class="button mobile-toggle">
+                Next step
+            </div>
+            <p id="back-mobile" class="mobile-toggle">< Back</p>
+	            <p id="skip2" class="skip mobile-toggle">Skip ></p>
+		</div>
+
+        <!-- ///////////////////////// FIRST SLIDE ///////////////////////// -->
+		
+		
+		
+		
+		
+		<div id="1" class="section-wrap desktop-toggle">
+			<div class="slide-bcg">
+				<a id="contact-skip" class="skip mobile-hidden" href="#contact">Skip to contact ></a>
+				<h4 class="desktop-hidden">Step 1/5</h4>
+				<h2>What are you interested in?</h2>
+				<div class="flexbox-booking">
+					<a id="studio-link" href="#studio" class="icon-bcg">
+						<div class="icon1"></div>
+						<h3>Studio</h3>
+					</a>
+					<a id="tech-link" href="#tech" class="icon-bcg">
+						<div class="icon2"></div>
+						<h3>Technology</h3>
+					</a>
+				</div>
+				<div class="bottom-bar mobile-hidden">
+					<h4>Step 1/5</h4>
+					<h5>Don’t worry, you can change this later</h5>
+				</div>
+			</div>
+		</div>
+		
+        <!-- ///////////////////////// STUDIO SLIDE ///////////////////////// -->
+
+		<div id="studio" class="section-wrap mobile-toggle">
+			<div class="slide-bcg">
+				<a id="studio-back" href="#1" class="back mobile-hidden">< Back</a>
+				<h4 class="desktop-hidden">Step 2/5</h4>
+				<h2>Which studio?</h2>
+				<div class="flexbox-booking2">
+					<div class="icon-bcg2">
+						<div class="icon3"></div>
+						<h3>Virtual studio</h3>
+					</div>
+					<div class="icon-bcg2">
+						<div class="icon4"></div>
+						<h3>Studio chroma</h3>
+					</div>
+					<div class="icon-bcg2">
+						<div class="icon5"></div>
+						<h3>Mixed studios</h3>
+					</div>
+				</div>
+				<div class="bottom-bar mobile-hidden">
+					<h4>Step 2/5</h4>
+					<div class="button">
+                        <a id="studio-next" href="#date">Next step</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+		        <!-- ///////////////////////// TECH SLIDE ///////////////////////// -->
+
+		<div id="tech" class="section-wrap mobile-toggle">
+			<div class="slide-bcg">
+				<a id="tech-back" href="#1" class="back mobile-hidden">< Back</a>
+				<h4 class="desktop-hidden">Step 2/5</h4>
+				<h2>Which technology?</h2>
+				<div class="icon-container">
+					<div class="icon-bcg3">
+						<div class="icon6"></div>
+						<h3>Augmented<br>reality</h3>
+					</div>
+					<div class="icon-bcg3">
+						<div class="icon7"></div>
+						<h3>Camera<br>tracking</h3>
+					</div>
+					<div class="icon-bcg3">
+						<div class="icon8"></div>
+						<h3>Video<br>tracking</h3>
+					</div>
+					<div class="icon-bcg3">
+						<div class="icon9"></div>
+						<h3>Live<br>streaming</h3>
+					</div>
+					<div class="icon-bcg3">
+						<div class="icon10"></div>
+						<h3>Live<br>avatar</h3>
+					</div>
+					<div class="icon-bcg3">
+						<div class="icon11"></div>
+						<h3>Interactive<br>touch</h3>
+					</div>
+				</div>
+
+				<div class="bottom-bar mobile-hidden">
+					<h4>Step 2/5</h4>
+					<div class="button">
+                        <a id="tech-next" href="#date">Next step</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+        
+        <div id="date" class="section-wrap mobile-toggle">
+			<div class="slide-bcg">
+				<a id="date-back" class="back mobile-hidden">< Back</a>
+				<a class="skip mobile-hidden" href="#contact">Skip to contact ></a>
+				<h4 class="desktop-hidden">Step 3/5</h4>
+				<h2>Choose your dates</h2>
+				<div class="form-container">
+					<form id="dateForm">
+<!--
+						<label>Date #1:</label>
+						<input type="date" id="fdate" name="fdate"><br><br>
+						<input id="fstudio" type="text" id="fname" name="fname" placeholder="Virtual studio"><br><br>
+-->
+					</form>
+					<div class="add-more">
+						<div class="cross"></div>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="bottom-bar mobile-hidden">
+					<h4>Step 3/5</h4>
+					<div class="button">
+                        <a id="date-next" href="#contact">Next step</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="contact" class="section-wrap mobile-toggle">
+			<div class="slide-bcg">
+				<a id="contact-back" href="#date" class="back mobile-hidden">< Back</a>
+				<h4 class="desktop-hidden">Step 4/5</h4>
+				<h2>Contact us!</h2>
+				<div class="form-container">
+					<form>
+						<input id="fname" type="text" name="fname" placeholder="Name"><br><br>
+						<input id="fmail" type="text" name="fmail" placeholder="Email"><br><br>
+						<textarea id="fmsg" name="message" placeholder="Additional details"></textarea>
+					</form>
+					<p>See previous messages ></p>
+				</div>
+				
+				
+				
+				<div class="bottom-bar mobile-hidden">
+					<h4>Step 4/5</h4>
+					<div class="button">
+                        <a id="summary-next" href="#summary">Next step</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="summary" class="section-wrap mobile-toggle">
+			<div class="slide-bcg">
+				<a id="summary-back" href="#contact" class="back mobile-hidden">< Back</a>
+				<h4 class="desktop-hidden">Step 5/5</h4>
+				<h2>Summary</h2>
+				<div class="summary-container">
+                    <div class="summary-left">
+                        <div class="service-summary">
+	                        <h3>Studio:<a class="change-btn" href="#studio">Change</a></h3>
+	                        <p id="studio-final">None</p>
+	                        <h3>Technology:<a class="change-btn" href="#tech">Change</a></h3>
+	                        <p id="tech-final">None</p>
+                        </div>
+                    </div>
+                    <div class="summary-right">
+                        <div class="service-summary">
+	                        <h3>Contact:<a class="change-btn" href="#contact">Change</a></h3>
+	                        <p id="yourname">None</p>
+	                        <p id="yourmail">None</p>
+	                        <p id="yourmsg">None</p>
+                        </div>
+                    </div>
+                </div>
+
+				
+				
+				
+				
+				<div class="bottom-bar mobile-hidden">
+					<h4>Step 5/5</h4>
+					<div class="button">
+                        <a id="submit-next" href="#end">Submit</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="end" class="section-wrap mobile-toggle">
+			<div class="slide-bcg">
+				<h2 class="last-note">Thank you for your inquiry!</h2>
+				<p class="msg"> You can expect to hear back from us within 3 working days.</p>
+				
+				<div class="button redirect-btn">
+                    <a href="index.html">Back to home page</a>
+                </div>
+				<p class="redirect-msg">You're being redirected to the home page. 10</p>
+				
+				
+				
+				
+				
+			</div>
+		</div>
+    </div>
+</body>
+
+</html>

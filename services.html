@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/styles.css" media="screen" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be0fc92df8.js" crossorigin="anonymous"></script>
+    <script src="assets/nav.js" defer></script>
+    <title>Europalco Studio</title>
+</head>
+
+<body>
+    <!-- ///////////////////////// TOP BAR ///////////////////////// -->
+    <div class="top-bar">
+        <a href="index.html" class="logo"></a>
+        <div class="burger"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <div class="nav-expandable">
+                        <a href="#">Studios</a>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="triangle"></div>
+
+                    <div class="nav-expanded" id="submenu1">
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="studio.html">Virtual studio</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="studio2.html">Mixed studio</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="studio3.html">Studio Chroma</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active">
+                    <div class="nav-expandable">
+                        <a href="services.html">Technology</a>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="triangle"></div>
+
+                    <div class="nav-expanded" id="submenu2">
+                        <ul class="submenu">
+                            <li class="submenu-item br-words">
+                                <a href="services.html#augmented">Augmented reality</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#camera">Cam Tracking</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#video">Vid Tracking</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#live">Live streaming</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#avatar">Live avatar</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#touch">Interactive touch</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="nav-expandable">
+                        <a href="portfolio.html">Portfolio</a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <a href="booking.html">Enquiry form</a>
+                    </div>
+                </li>
+                <li class="lang-switch" onclick="window.location.href='../pt/index.html'">
+                    <div class="lang-icon"></div>
+                    <h5>PT</h5>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ///////////////////////// MOBILE NAV ///////////////////////// -->
+    <div class="nav-mobile-final desktop-hidden mobile-toggle">
+    	<div class="language-btn">
+	    	<a href="../pt/index.html">Português</a>
+	    	<div class="active-lang">English</div>
+    	</div>
+    	<nav class="nav-burger">
+	    	<ul>
+		    	<li>
+		    		<a href="index.html">Home</a>
+		    	</li>
+		    	<li class="expandable-li">
+		    		<div class="expandable">Studios<i class="fas fa-chevron-down arrow"></i></div>
+		    		<ul class="sub-list mobile-toggle">
+			    		<li>
+			    			<a href="studio.html">Virtual studio <i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="studio2.html">Studio chroma<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="studio3.html">Mixed studio<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+		    		</ul>
+		    	</li>
+		    	<li id="current" class="active-tab expandable-li">
+		    		<a class="expandable" href="#">Technology<i class="fas fa-chevron-down arrow"></i></a>
+		    		<ul class="sub-list mobile-toggle">
+			    		<li>
+			    			<a href="services.html#augmented">Augmented reality<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#camera">Camera tracking<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#video">Video tracking<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#live">Live streaming <i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#avatar">Live avatar<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#touch">Interactive touch<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+		    		</ul>
+		    	</li>
+		    	<li>
+		    		<a class="bottom-border" href="portfolio.html">Portfolio</a>
+		    	</li>
+	    	</ul>
+    	</nav>
+    	<a href="booking.html" class="booking-btn-mobile">Enquiry form</a>
+    </div>
+
+    <!-- ///////////////////////// WRAP ///////////////////////// -->
+    <div class="wrap">
+        <div class="bcg-img"></div>
+        <div class="dark-overlay"></div>
+
+       
+
+            <div id="augmented" class="grid-container-tech">
+            <article class="tech-a">
+                <div class="header-container">
+                    <h2>
+                        Augmented reality
+                        </h2>
+                    <div class="underline"></div>
+                </div>
+                <p>Augmented reality is an interactive experience of a real-world environment.
+                    The objects that reside in the real world are enhanced by computer-generated perceptual information, 
+                    sometimes across multiple sensory modalities.</p>
+                <p>AR is a system that fulfills three features - a combination of real and virtual worlds, real-time interaction, 
+                    and accurate 3D registration of virtual and real objects. This technology is in a way “reality bending”.</p>
+            </article>
+            <div class="tech-image" id="AR-main"></div>
+            <article class="tech-b">
+                <div class="tech-image3" id="AR-image1"></div>
+                <div class="tech-image3" id="AR-image2"></div>
+                <div class="tech-image3" id="AR-image3"></div>
+            </article>
+        </div>
+
+        <div id="camera" class="grid-container-tech">
+            <article class="tech-a">
+                <div class="header-container">
+                    <h2>Camera tracking</h2>
+                    <div class="underline"></div>
+                </div>
+                <p>Real-time camera tracking enables live virtual broadcast graphics in indoor or outside broadcast, 
+                    including installation on a handheld, Steadicam and cable-based systems.</p>
+                <p>Tracking is the positional measurement of bodies that move in a defined space. 
+                    There are many tracking systems,
+                     based on different measurement principles - mechanical trackers, magnetic trackers, 
+                     optical trackers (VIS or IR), acoustic trackers and systems based on inertial or gyro sensors. 
+                     Also widely used are hybrid systems, combining different techniques.</p>
+            </article>
+            <div class="tech-image" id="cam-track-main"></div>
+            <article class="tech-b">
+                <div class="tech-image3" id="cam-track-image1"></div>
+                <div class="tech-image3" id="cam-track-image2"></div>
+                <div class="tech-image3" id="cam-track-image3"></div>
+            </article>
+        </div>
+
+        <div id="video" class="grid-container-tech">
+            <article class="tech-a">
+                <div class="header-container">
+                    <h2>Video tracking</h2>
+                    <div class="underline"></div>
+                </div>
+                <p>Video tracking is the process of locating a moving object/s using a camera. 
+                    When tracking flat objects, the motion model is a 2D transformation. 
+                    When the target is a non-flat 3D object, the motion model defines its aspect depending on its 3D position and orientation.</p>
+                <p>Tracking is the positional measurement of bodies that move in a defined space. 
+                    There are many tracking systems,
+                     based on different measurement principles - mechanical trackers, magnetic trackers, 
+                     optical trackers (VIS or IR), acoustic trackers and systems based on inertial or gyro sensors. 
+                     Also widely used are hybrid systems, combining different techniques.</p>
+            </article>
+            <div class="tech-image" id="vid-track-main"></div>
+            <article class="tech-b">
+                <div class="tech-image3" id="vid-track-image1"></div>
+                <div class="tech-image3" id="vid-track-image2"></div>
+                <div class="tech-image3" id="vid-track-image3"></div>
+            </article>
+        </div>
+
+        <div id="live" class="grid-container-tech">
+            <article class="tech-a">
+                <div class="header-container">
+                    <h2>Live streaming</h2>
+                    <div class="underline"></div>
+                </div>
+                <p>Live stream to any audience, no matter the scale. We make it easy to stream your virtual events, 
+                    executive communications, 
+                    trainings, and everything in between.</p>
+                <p>Multilingual live streaming to global audiences, multi language video player allows your viewers 
+                    to switch to their preferred language while watching the vide.Player provides the best possible
+                    experience on any device and platform (using adaptive streaming). You can easily embed the player
+                    on your website by copy-pasting its embed code.</p>
+            </article>
+            <div class="tech-image" id="stream-main"></div>
+            <article class="tech-b">
+                <div class="tech-image3" id="stream-image1"></div>
+                <div class="tech-image3" id="stream-image2"></div>
+                <div class="tech-image3" id="stream-image3"></div>
+            </article>
+        </div>
+
+        <div id="avatar" class="grid-container-tech">
+            <article class="tech-a">
+                <div class="header-container">
+                    <h2>Live Avatar</h2>
+                    <div class="underline"></div>
+                </div>
+                <p>Video tracking is the process of locating a moving object/s using a camera. 
+                    When tracking flat objects, the motion model is a 2D transformation. 
+                    When the target is a non-flat 3D object, the motion model defines its aspect depending on its 3D position and orientation.</p>
+                <p>Tracking is the positional measurement of bodies that move in a defined space. 
+                    There are many tracking systems,
+                     based on different measurement principles - mechanical trackers, magnetic trackers, 
+                     optical trackers (VIS or IR), acoustic trackers and systems based on inertial or gyro sensors. 
+                     Also widely used are hybrid systems, combining different techniques.</p>
+            </article>
+            <div class="tech-image"></div>
+            <div class="tech-image" id="avatar-main"></div>
+            <article class="tech-b">
+                <div class="tech-image3" id="avatar-image1"></div>
+                <div class="tech-image3" id="avatar-image2"></div>
+                <div class="tech-image3" id="avatar-image3"></div>
+            </article>
+        </div>
+
+        <div id="touch" class="grid-container-tech">
+            <article class="tech-a">
+                <div class="header-container">
+                    <h2>Interactive Touch </h2>
+                    <div class="underline"></div>
+                </div>
+                <p>Video tracking is the process of locating a moving object/s using a camera. 
+                    When tracking flat objects, the motion model is a 2D transformation. 
+                    When the target is a non-flat 3D object, the motion model defines its aspect depending on its 3D position and orientation.</p>
+                <p>Tracking is the positional measurement of bodies that move in a defined space. 
+                    There are many tracking systems,
+                     based on different measurement principles - mechanical trackers, magnetic trackers, 
+                     optical trackers (VIS or IR), acoustic trackers and systems based on inertial or gyro sensors. 
+                     Also widely used are hybrid systems, combining different techniques.</p>
+            </article>
+            <div class="tech-image" id="interact-main"></div>
+            <article class="tech-b">
+                <div class="tech-image3" id="interact-image1"></div>
+                <div class="tech-image3" id="interact-image2"></div>
+                <div class="tech-image3" id="interact-image3"></div>
+            </article>
+        </div>
+        
+        <footer>
+            <div class="footer">
+                <div class="foot-info">
+                    <h2>
+                        Our Headquarters
+                    </h2>
+                    <div class="underline"></div>
+                    <div class="contact-flex1">
+                        <div class=contact-container1>
+                            <h3>
+                                Phone:
+                            </h3>
+                            <p>
+                                (+351) 219 605 520
+                            </p>
+                        </div>
+                        <div class=contact-container2>
+                            <h3>
+                                Address:
+                            </h3>
+                            <p>
+                                Estrada da Ericeira<br>
+                                112 e 112 A – Ral<br>
+                                2710-453 Sintra<br>
+                                Portugal<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-info">
+                    <h2>
+                        Our E-mails
+                    </h2>
+                    <div class="underline"></div>
+                    <div class="contact-flex1">
+                        <div class="contact-container1">
+                            <h3>
+                                Commercial
+                            </h3>
+                            <a href="mailto:commmercial@europalco.pt">
+                                commmercial@europalco.pt
+                            </a>
+                            <h3>
+                                Marketing
+                            </h3>
+                            <a href="mailto:marketing@europalco.pt">
+                                marketing@europalco.pt
+                            </a>
+                            <h3>
+                                Logistics
+                            </h3>
+                            <a href="mailto:logistica@europalco.pt">
+                                logistica@europalco.pt
+                            </a>
+                        </div>
+                        <div class="contact-container3">
+                            <h3>
+                                Finance
+                            </h3>
+                            <a href="mailto:financeiro@europalco.pt">
+                                financeiro@europalco.pt
+                            </a>
+                            <h3>
+                                Human Resources
+                            </h3>
+                            <a href="mailto:ecrutamento@europalco.pt">
+                                recrutamento@europalco.pt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-logo"></div>
+            </div>
+
+            <div class="end-section">
+                <h5>
+                    europalco.pt
+                    </h5>
+                    <p>
+                        © Copyright 2020 | MMDI 2
+                    </p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

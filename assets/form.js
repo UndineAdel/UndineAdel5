@@ -1,5 +1,6 @@
 const bottomBar = document.getElementsByClassName("bottom-mobile-bar")[0];
 
+// Individual slides
 const slide1 = document.getElementsByClassName("section-wrap")[0]; // 1/5
 const slide2 = document.getElementsByClassName("section-wrap")[1]; // 2/5
 const slide3 = document.getElementsByClassName("section-wrap")[2]; // 2/5
@@ -8,54 +9,54 @@ const slide5 = document.getElementsByClassName("section-wrap")[4]; // 4/5
 const slide6 = document.getElementsByClassName("section-wrap")[5]; // 5/5
 const end = document.getElementsByClassName("section-wrap")[6];
 
+
+// Slide 1 next buttons
 const icon1 = document.getElementsByClassName("icon-bcg2");
 const icon2 = document.getElementsByClassName("icon-bcg3");
 
-
+// Slide 6 change button
 const changeBtn = document.getElementsByClassName("change-btn");
 
-
+// Service selection arrays
 const selectedItem = [];
 const selectedTech = [];
 
-
+// Mobile bottom bar "Back" button
 const backBtn = document.getElementById("back-mobile");
-
 
 
 const studio = document.getElementById("studio-link");
 const tech = document.getElementById("tech-link");
 
-var width = window.innerWidth;
+// var width = window.innerWidth;
 
+
+// Variables for counting
 let previousSlide = 0;
-
 let windowCount = 0;
 let nextSlide = 0;
 
+
+// Desktop form nav elements
 const addBtn = document.getElementsByClassName("cross")[0]; 
 const studioNext = document.getElementById("studio-next");
 const techNext = document.getElementById("tech-next");
 const dateNext = document.getElementById("date-next");
 const summaryNext = document.getElementById("summary-next");
 const submitNext = document.getElementById("submit-next");
-
-
 const studioBack = document.getElementById("studio-back");
 const techBack = document.getElementById("tech-back");
-
 const dateBack = document.getElementById("date-back");
 const contBack = document.getElementById("contact-back");
 const summaryBack = document.getElementById("summary-back");
-
 const contactSkip = document.getElementById("contact-skip");
 
+
+// Desktop form navigation 
 contactSkip.addEventListener("click", function(){
 	slide1.classList.remove("desktop-toggle");
 	slide5.classList.add("desktop-toggle");
 });
-
-
 
 studioNext.addEventListener("click", function(){
 	slide4.classList.add("desktop-toggle");
@@ -161,7 +162,7 @@ const skip2 = document.getElementById("skip2");
 
 
 
-
+// Redirect to home page
 function redirectMe(){
 	window.location.href = 'index.html';
 }
@@ -170,7 +171,7 @@ function redirectMe(){
 
 
 
-
+// Click counting array
 let clickCount = [1, 1, 1, 0, 1, 1, 1, 1, 1, 1];
 let service = {};
 
@@ -181,6 +182,8 @@ for (let i = 0; i < icon1.length; i++){
 		icon1[i].classList.toggle("selected-icon");
 		
 		function iconSelector(){
+			
+			// If number of clicks on an element is divisible by 2 without remainder -> number of clicks is even
 			if(clickCount[i] % 2 == 0){
 				console.log(clickCount[i])
 				for(let i = selectedItem.length - 1; i >= 0; i--) {
@@ -196,16 +199,19 @@ for (let i = 0; i < icon1.length; i++){
 		}
 	
 		if(icon1[i] == icon1[0]){
+			// adds the name of the service to the "service" object
 			service = "Virtual studio";
 			iconSelector();
 			clickCount[i]++;
 		}
 		else if(icon1[i] == icon1[1]){
+			// adds the name of the service to the "service" object
 			service = "Chroma studio";
 			iconSelector();
 			clickCount[i]++;
 		}
 		else if(icon1[i] == icon1[2]){
+			// adds the name of the service to the "service" object
 			service = "Mixed studio";
 			iconSelector();
 			clickCount[i]++;
@@ -222,6 +228,9 @@ for (let i = 0; i < icon2.length; i++){
 		icon2[i].classList.toggle("selected-icon");
 		
 		function iconSelector(){
+			
+			// If number of clicks on an element is divisible by 2 without remainder -> number of clicks is even
+			// [i + 4] is here so tech could use the same array as the studio
 			if(clickCount[i + 4] % 2 == 0){
 				console.log(clickCount[i + 4])
 				for(let i = selectedTech.length - 1; i >= 0; i--) {
@@ -237,31 +246,37 @@ for (let i = 0; i < icon2.length; i++){
 		}
 	
 		if(icon2[i] == icon2[0]){
+			// adds the name of the service to the "service" object
 			service = "Augmented reality";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[1]){
+			// adds the name of the service to the "service" object
 			service = "Camera tracking";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[2]){
+			// adds the name of the service to the "service" object
 			service = "Video tracking";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[3]){
+			// adds the name of the service to the "service" object
 			service = "Live streaming";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[4]){
+			// adds the name of the service to the "service" object
 			service = "Live avatar";
 			iconSelector();
 			clickCount[i + 4]++;
 		}
 		else if(icon2[i] == icon2[5]){
+			// adds the name of the service to the "service" object
 			service = "Interactive touch";
 			iconSelector();
 			clickCount[i + 4]++;
@@ -276,6 +291,7 @@ for (let i = 0; i < icon2.length; i++){
 
 // Mobile booking nav
 
+// Updates the "nextSlide" variable depending on the "windowCount"
 function counter(){
 	if(windowCount == 1){
 		nextSlide = slide4;
@@ -291,6 +307,7 @@ function counter(){
 	};
 }
 
+// Toggling slides and buttons after specific button clicks 
 studio.addEventListener("click", function(){
 	slide1.classList.toggle("mobile-toggle");
 	slide1.classList.remove("desktop-toggle");
@@ -299,6 +316,8 @@ studio.addEventListener("click", function(){
 	next.classList.toggle("mobile-toggle");
 	skip1.classList.toggle("mobile-toggle");
 	backBtn.classList.toggle("mobile-toggle");
+	
+	// Important for the "Back" button
 	previousSlide = slide2;
 	windowCount = 1;
 	counter();
@@ -312,11 +331,14 @@ tech.addEventListener("click", function(){
 	next.classList.toggle("mobile-toggle");
 	skip1.classList.toggle("mobile-toggle");
 	backBtn.classList.toggle("mobile-toggle");
+
+	// Important for the "Back" button
 	previousSlide = slide3;
 	windowCount = 1;
 	counter();
 });
 
+// Back button
 backBtn.addEventListener("click", function(){
 	counter();	
 	dateDelete();
@@ -355,6 +377,7 @@ backBtn.addEventListener("click", function(){
 	};
 })
 
+// Next button
 next.addEventListener("click", function(){
 	counter();
 	console.log("next slide = " + nextSlide)
@@ -373,7 +396,7 @@ next.addEventListener("click", function(){
 		nextSlide.classList.toggle("mobile-toggle");
 		skip2.classList.add("mobile-toggle");
 		nextSlide.scrollIntoView();
-// 		setTimeout(redirectMe, seconds * 1000);
+ 		setTimeout(redirectMe, seconds * 1000);
 		setInterval(countdown, 1000);
 	}
 	else{
@@ -391,6 +414,7 @@ next.addEventListener("click", function(){
 	}
 });
 
+// First skip button
 skip1.addEventListener("click", function(){
 	slide1.classList.toggle("mobile-toggle");
 	slide5.classList.toggle("mobile-toggle");
@@ -401,6 +425,7 @@ skip1.addEventListener("click", function(){
 	windowCount = 3;
 });
 
+// Second skip button
 skip2.addEventListener("click", function(){
 	counter();
 	nextSlide.classList.toggle("mobile-toggle");
@@ -409,7 +434,7 @@ skip2.addEventListener("click", function(){
 	skip2.classList.add("mobile-toggle");
 });
 
-
+// Variables for the summary slide
 const fStudio = document.getElementById("studio-final");
 const fTech = document.getElementById("tech-final");
 
@@ -418,14 +443,26 @@ let techText = 0;
 
 function summaryContent(){
 	function showStudio() {	
+		
+		// Makes a string out of a "selectedItem" array and stores it as "itemString" variable
 		let itemString = selectedItem.toString();
+		
+		// Splits the "itemString" everywhere where there is "," present
 		let items = itemString.split(",");
+		
+		// Adds line breaks and inserts all of the selected items into the form
 		fStudio.innerHTML = items.join(`<br>`);
 	};
 	
 	function showTech() {	
+
+		// Makes a string out of a "selectedItem" array and stores it as "itemString" variable
 		let itemString = selectedTech.toString();
+
+		// Splits the "itemString" everywhere where there is "," present
 		let items = itemString.split(",");
+
+		// Adds line breaks and inserts all of the selected items into the form
 		fTech.innerHTML = items.join(`<br>`);
 	};
 showStudio();      
@@ -433,6 +470,8 @@ showTech();
 }
 
 
+
+// Countdown for the last slide before redirecting
 let seconds = 10;
 let message = document.getElementsByClassName('redirect-msg')[0];
 

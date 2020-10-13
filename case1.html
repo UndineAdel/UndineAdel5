@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/styles.css" media="screen" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be0fc92df8.js" crossorigin="anonymous"></script>
+    <script src="assets/nav.js" defer></script>
+    <title>Europalco Studio</title>
+</head>
+
+<body>
+    <!-- ///////////////////////// TOP BAR ///////////////////////// -->
+    <div class="top-bar">
+        <a href="index.html" class="logo"></a>
+        <div class="burger"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <div class="nav-expandable">
+                        <a href="#">Studios</a>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="triangle"></div>
+
+                    <div class="nav-expanded" id="submenu1">
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="studio.html">Virtual studio</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="studio2.html">Mixed studio</a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="studio3.html">Studio Chroma</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="nav-expandable">
+                        <a href="services.html">Technology</a>
+                        <div class="arrow-down"></div>
+                    </div>
+                    <div class="triangle"></div>
+
+                    <div class="nav-expanded" id="submenu2">
+                        <ul class="submenu">
+                            <li class="submenu-item br-words">
+                                <a href="services.html#augmented">Augmented reality</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#camera">Cam Tracking</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#video">Vid Tracking</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#live">Live streaming</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#avatar">Live avatar</a>
+                            </li>
+                            <li class="submenu-item br-words">
+                                <a href="services.html#touch">Interactive touch</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="active">
+                    <div class="nav-expandable">
+                        <a href="portfolio.html">Portfolio</a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="button">
+                        <a href="booking.html">Enquiry form</a>
+                    </div>
+                </li>
+                <li class="lang-switch" onclick="window.location.href='../pt/index.html'">
+                    <div class="lang-icon"></div>
+                    <h5>PT</h5>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ///////////////////////// MOBILE NAV ///////////////////////// -->
+    <div class="nav-mobile-final desktop-hidden mobile-toggle">
+    	<div class="language-btn">
+	    	<a href="../pt/index.html">Português</a>
+	    	<div class="active-lang">English</div>
+    	</div>
+    	<nav class="nav-burger">
+	    	<ul>
+		    	<li>
+		    		<a href="index.html">Home</a>
+		    	</li>
+		    	<li class="expandable-li">
+		    		<div class="expandable">Studios<i class="fas fa-chevron-down arrow"></i></div>
+		    		<ul class="sub-list mobile-toggle">
+			    		<li>
+			    			<a href="studio.html">Virtual studio <i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="studio2.html">Studio chroma<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="studio3.html">Mixed studio<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+		    		</ul>
+		    	</li>
+		    	<li class="expandable-li">
+		    		<a class="expandable" href="#">Technology<i class="fas fa-chevron-down arrow"></i></a>
+		    		<ul class="sub-list mobile-toggle">
+			    		<li>
+			    			<a href="services.html#augmented">Augmented reality<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#camera">Camera tracking<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#video">Video tracking<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#live">Live streaming <i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#avatar">Live avatar<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+			    		<li>
+			    			<a href="services.html#touch">Interactive touch<i class="fas fa-chevron-right"></i></a>
+			    		</li>
+		    		</ul>
+		    	</li>
+		    	<li id="current" class="active-tab">
+		    		<a class="bottom-border" href="portfolio.html">Portfolio</a>
+		    	</li>
+	    	</ul>
+    	</nav>
+    	<a href="booking.html" class="booking-btn-mobile">Enquiry form</a>
+    </div>
+    <!-- ///////////////////////// WRAP ///////////////////////// -->
+    <div class="wrap">
+        <div class="bcg-img"></div>
+        <div class="dark-overlay"></div>
+
+        <div class="grid-container-case">
+            <div class="portfolio-title">
+                <a href="portfolio.html" class="back" id="case-back">< Back</a>
+                <h2>Digital Book Fair</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="case-data">
+                <p>
+                    Fundação Francisco Manuel dos Santos<br>
+                    02 June 2020<br>
+                    Europalco Studio
+                </p>
+            </div>
+            <div class="case-summary">
+                <h3>
+                    Case Summary
+                </h3>
+                <p>
+                    Francisco Manuel dos Santos Foundation will be in our Studio every Tuesday, 
+                    Thursday and Friday from 7pm for the broadcast of a Digital Book Fair with very special programs.
+                    The first one took place on June 2 and was marked by a debate in which several writers attended.
+                </p>
+            </div>
+            <div class="case-main-image" id="case1-main-image">
+
+            </div>
+            <div class="case-studio">
+                <div class="case-sub-title">
+                    <h2>Studio Used</h2>
+                    <div class="underline"></div>
+                </div>
+                <ul>
+                    <li>
+                        Mixed Studio
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="case-studio-image" id="case1-studio-image">
+
+            </div>
+            <div class="case-tech-image" id="case1-tech-image">
+
+            </div>
+            <div class="case-tech">
+                <div class="case-sub-title">
+                    <h2>Technology Used</h2>
+                    <div class="underline"></div>
+                </div>
+                <ul>
+                    <li>
+                        Augmented Reality
+                    </li>
+                    <li>
+                        Live avatar
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+
+        <<footer>
+            <div class="footer">
+                <div class="foot-info">
+                    <h2>
+                        Our Headquarters
+                    </h2>
+                    <div class="underline"></div>
+                    <div class="contact-flex1">
+                        <div class=contact-container1>
+                            <h3>
+                                Phone:
+                            </h3>
+                            <p>
+                                (+351) 219 605 520
+                            </p>
+                        </div>
+                        <div class=contact-container2>
+                            <h3>
+                                Address:
+                            </h3>
+                            <p>
+                                Estrada da Ericeira<br>
+                                112 e 112 A – Ral<br>
+                                2710-453 Sintra<br>
+                                Portugal<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-info">
+                    <h2>
+                        Our E-mails
+                    </h2>
+                    <div class="underline"></div>
+                    <div class="contact-flex1">
+                        <div class="contact-container1">
+                            <h3>
+                                Commercial
+                            </h3>
+                            <a href="mailto:commmercial@europalco.pt">
+                                commmercial@europalco.pt
+                            </a>
+                            <h3>
+                                Marketing
+                            </h3>
+                            <a href="mailto:marketing@europalco.pt">
+                                marketing@europalco.pt
+                            </a>
+                            <h3>
+                                Logistics
+                            </h3>
+                            <a href="mailto:logistica@europalco.pt">
+                                logistica@europalco.pt
+                            </a>
+                        </div>
+                        <div class="contact-container3">
+                            <h3>
+                                Finance
+                            </h3>
+                            <a href="mailto:financeiro@europalco.pt">
+                                financeiro@europalco.pt
+                            </a>
+                            <h3>
+                                Human Resources
+                            </h3>
+                            <a href="mailto:ecrutamento@europalco.pt">
+                                recrutamento@europalco.pt
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="foot-logo"></div>
+            </div>
+
+            <div class="end-section">
+                <h5>
+                    europalco.pt
+                    </h5>
+                    <p>
+                        © Copyright 2020 | MMDI 2
+                    </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
